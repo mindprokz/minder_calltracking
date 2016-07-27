@@ -6,12 +6,12 @@ export default class sendForm {
       	name: document.querySelector(dates.name.value),
       	email: document.querySelector(dates.email.value),
       	telephone: document.querySelector(dates.telephone.value)
-      }	
+      }
 
       $("#application").submit( () => {
         $.ajax({
           type: "POST",
-          url: "mail.php",
+          url: "application.php",
           data: data
         }).done(function (value) {
           let mail = document.getElementById(idMail);
@@ -23,11 +23,11 @@ export default class sendForm {
             $(`#${id}`).trigger("reset");
             mail.classList.add('not_visible_mail');
           }, 1000);
-          
+
         });
 
         return false;
-      });  
+      });
 
     });
   }

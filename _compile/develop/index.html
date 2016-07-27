@@ -6,10 +6,10 @@
     <meta name="Keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=480px, maximum-scale=1">
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="http://mindpro.kz/sites/default/files/favicon_3.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="http://mindpro.kz/sites/default/files/favicon_3.png">
+    <link rel="apple-touch-icon" sizes="http://mindpro.kz/sites/default/files/favicon_3.png">
+    <link rel="apple-touch-icon" sizes="http://mindpro.kz/sites/default/files/favicon_3.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&subset=cyrillic" rel="stylesheet">
   </head>
@@ -20,7 +20,7 @@
         <h2 class="slogan">Внедрение IP телефонии в отделы продаж под ключ</h2>
         <div class="contact">
           <header class="number">+7 705 <b>108 99 88</b></header>
-          <footer class="link">Заказать обратный звонок</footer>
+          <footer class="link"><a href="#form" class="link_wrap">Заказать обратный звонок</a></footer>
         </div>
       </div>
     </section>
@@ -55,10 +55,10 @@
         </ul>
       </div>
     </section>
-    <section class="backForm">
+    <section class="backForm"><a name="form"></a>
       <div class="container">
         <h2><b>Заказать</b> бесплатную консультацию</h2>
-        <form>
+        <form action="application.php" method="POST">
           <label>
             <input type="text" required placeholder="Ваше имя">
           </label>
@@ -69,7 +69,7 @@
             <input type="email" required placeholder="Ваш E-mail">
           </label>
           <label>
-            <input type="button" value="Отправить">
+            <input type="submit" value="Отправить">
           </label>
         </form>
       </div>
@@ -146,13 +146,14 @@
     <footer class="siteFooter">
       <div class="container">
         <h4><b>«MINDPRO-GROUP»</b> — 2016</h4>
-        <div class="adress">Казахстан, Караганда, Воинов-Интернационалистов, 31 <a href='mailto:someone@example.com'>mindpro@sales.kz</a></div>
+        <div class="adress">Республика Казахстан, Астана, Алмата, Караганда <a href='mailto:someone@example.com'>hello@mindpro.kz</a></div>
         <div class="logo">
           <div class="img"></div>
           <div class="text">Cайт разработан <br> <b>mindpro-group.com</b></div>
         </div>
       </div>
     </footer>
-    <script src="common.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="bundle.min.js"></script>
   </body>
 </html>
