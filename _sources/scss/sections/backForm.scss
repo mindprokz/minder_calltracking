@@ -1,0 +1,83 @@
+.backForm {
+	background: url('images/form.jpg') no-repeat;
+	background-size: cover;
+	padding-bottom: 25px;	
+	
+	.container {
+		padding-left: 15px;	
+		padding-right: 15px;	
+	}
+	
+	b {
+		font-weight: 700;
+	}
+
+	h2 {
+		padding-top: 30px;	
+		padding-bottom: 25px;	
+		text-align: center;
+		color: #FFFFFF;
+		text-transform: uppercase;
+		
+		@media screen and (min-width: 480px) {
+			font-size: 22px;
+		}
+		
+		@media screen and (min-width: 750px) {
+			font-size: 35px
+		}
+	}
+	
+	label {
+		padding-left: 15px;	
+		padding-right: 15px;	
+		width: 100%;	
+		
+		@media screen and (min-width: 480px) {
+			@include span(6 border-box);
+		}
+		
+		@media screen and (min-width: 750px) {
+			@include span(3 border-box);
+		}
+	}
+	
+	input {
+		@include span(12 border-box);
+	}
+	
+	input[type="text"], input[type="tel"], input[type="email"] {
+		box-sizing: border-box;
+		font-size: 15px;
+		color: #FFFFFF;
+		background: transparent;
+		border: 1px solid;
+		border-radius: 14px;
+		padding: 9px 15px 9px 15px;
+		
+		&:focus {
+			outline: 0;
+		}
+	}
+	
+	input[type="submit"] {
+		box-sizing: border-box;
+		font-size: 15px;
+		color: #FFFFFF;
+		background: transparent;
+		border: 2px solid;
+		border-radius: 14px;
+		padding: 7px 15px 9px 15px;
+		cursor: pointer;	
+		text-transform: uppercase;
+		font-weight: 700;
+		
+	}
+
+}	
+
+
+::-webkit-input-placeholder {  color: #FFFFFF;  }	
+::-moz-placeholder {  color: #FFFFFF;  }	
+:-moz-placeholder {  color: #FFFFFF;  }	
+:-ms-input-placeholder {  color: #FFFFFF;  }	

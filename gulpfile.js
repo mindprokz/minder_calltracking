@@ -35,8 +35,8 @@ gulp.task('server', () => {
   // Если переменная окружения задана, то делаем сборку под продакшн
   if (env === 'develop') {
     bs.init({
-      //server : `./_compile/${env}/`,
-      proxy: 'localhost:8000'
+      server : `./_compile/${env}/`,
+      //proxy: 'localhost:8000'
     }) 
   }
 
@@ -99,7 +99,7 @@ gulp.task('jade', () => {
   gulp.src(jadePath.from)
   .pipe(pug({ pretty: true }))
   .pipe(rename(function (path) {
-    path.extname = ".php"
+    path.extname = ".html"
   }))
   .pipe(gulp.dest(jadePath.to));
 

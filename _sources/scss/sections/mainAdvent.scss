@@ -1,0 +1,168 @@
+.mainAdvent {
+	background: #f6f7fa;
+	padding-top: 60px;	
+	padding-bottom: 55px;	
+	color: #333333;
+	text-align: center;
+	
+	.container {
+		padding-left: 15px;	
+		padding-right: 15px;		
+	}
+	
+	b {
+		color: #a6569b;
+		font-weight: 700;
+	}
+	
+	h2 {
+		font-size: 40px;
+		padding-bottom: 45px;	
+		
+		@media screen and (min-width: 480px) {
+			font-size: 30px;
+		}	
+		
+		@media screen and (min-widht: 970px) {
+			font-size: 40px;
+		}
+		
+	}
+	
+	.percent {
+		border: 1px solid #d1d2d5;
+		border-radius: 50px;
+		width: 450px;	
+		margin: auto;
+		height: 100px;
+		margin-bottom: 60px;	
+		
+		.number {
+			color: #26ad60;
+			font-size: 62px;
+			font-weight: 700;
+			padding-top: 15px;	
+			float: left;
+			margin-left: 50px;	
+			margin-top: 2px;	
+		}	
+		
+		.text {
+			color: #333333;
+			font-size: 26px;
+			font-weight: 700;
+			float: left;
+			width: 155px;	
+			margin-left: 35px;	
+			border-left: 1px solid #d0d0d0;
+			padding-left: 15px;	
+			margin-top: 23px;	
+		}
+	}
+	
+	h3 {
+		font-size: 35px;
+		font-weight: 700;
+		padding-bottom: 45px;	
+	}
+	
+	.list {
+		margin: auto;
+		margin-top: 9px;	
+		margin-bottom: 9px;	
+		
+		&:after {
+			content: ' ';
+			clear: both;
+			visibility: hidden;
+			display: block;
+		}
+		
+		@media screen and (min-width: 480px) {
+			width: 100%;	
+		}
+		
+		@media screen and (min-width: 970px) {
+			width: 785px;	
+		}
+		
+		.index {
+			color: #38b36d;
+			font-weight: 300;
+			font-size: 18px;
+			border: 1px solid;
+			border-radius: 50%;
+			float: left;
+			width: 30px;	
+			height: 30px;	
+			position: relative;	
+			
+			span {
+				position: absolute;	
+				top: 50%;
+				left: 50%;	
+				transform: translate(-50%, -50%);	
+			}
+			
+		}
+		
+		.value {
+			color: #4e4e4e;
+			border-bottom: 1px solid #d2d2d2;
+			float: left;
+			padding-bottom: 10px;	
+			margin-left: 18px;
+			text-align: left;
+			font-size: 18px;
+			line-height: 20px;	
+			
+			@media screen and (min-width: 480px) {
+				width: 85%;	
+			}
+			
+			@media screen and (min-width: 970px) {
+				width: 735px;	
+			}
+		}
+	}
+	
+	.link {
+		color: #333333;
+		font-weight: 700;
+		font-size: 30px;
+		padding-top: 65px;	
+		padding-bottom: 60px;	
+		
+		span { 
+			position: relative;	
+		}
+		
+		span::before {
+			content: ' ';
+			background: url('images/sprite.png') no-repeat 15px 6px;
+			width: 40px;	
+			height: 40px;	
+			display: block;
+			position: absolute;	
+			left: -70px;
+			border: 1px solid #26ad60;
+			border-radius: 50%;
+			padding: 5px;	
+			margin-top: -9px;	
+			
+		}
+	}
+	
+	.ad {
+		
+		@media screen and (min-width: 480px) and (max-width: 750px) {
+			font-size: 17px;
+		}
+		
+		span:before {
+			background-position: -23px 9px;
+			width: 38px;	
+			height: 38px;
+		}	
+	}
+}

@@ -2,6 +2,16 @@
   'sass/_susy.scss',
   'sections/reset.scss',
   'sections/mail';
+html {
+	min-width: 480px;
+}
+
+body {
+	font-family: Roboto, sans-serif;
+	min-width: 480px;
+	background: #ccc;
+}
+  
 $susy: (
   columns: 12,
   gutters: 1/2,
@@ -20,6 +30,9 @@ $container-float: 100%;
   @include container($container);
 }  
 
-.test{
-  @include span(6);	
-}
+@import 'sections/navigation',
+	'sections/adventages',
+	'sections/backForm',
+	'sections/mainAdvent',
+	'sections/statistics',
+	'sections/footer'
